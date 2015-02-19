@@ -21,9 +21,9 @@ namespace ScreeningMathParser
             }
             // finally evaluate the whole expression
             var returnVal = new float();
-            Regex testForMatchingCharacters = new Regex(@"\d+[abcd]\d+|^e|f$|\d+[abcd]e\d+|\d+f[abcd]\d+");
+            Regex testForMatchingCharacters = new Regex(@"[abcdef]");
             var count = 0;
-            while (!float.TryParse(math2Parse, out returnVal) && testForMatchingCharacters.IsMatch(math2Parse) && count < math2Parse.Length/2)
+            while (!float.TryParse(math2Parse, out returnVal) && testForMatchingCharacters.IsMatch(math2Parse) && count < math2Parse.Length)
             {
                 math2Parse = evaluateNumericOperators(math2Parse);
                 count++;
@@ -41,7 +41,7 @@ namespace ScreeningMathParser
             Regex rgx = new Regex(@"^(\d+)([abcd])(\d+)");
 
             var count = 0;
-            while (rgx.IsMatch(subString2Parse) && count < subString2Parse.Length/2)
+            while (rgx.IsMatch(subString2Parse) && count < subString2Parse.Length)
             {
                 var match = rgx.Match(subString2Parse);
                 var val1 = float.Parse(match.Groups[1].ToString());
