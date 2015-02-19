@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+﻿using System.Web.Http;
 using ScreeningMathParser;
 
 namespace MathParserAngularUI.Controllers
@@ -13,9 +8,7 @@ namespace MathParserAngularUI.Controllers
         // GET api/math
         public float Get(string value)
         {
-            var parser = new MathParser();
-
-            return parser.parseString(value);
+            return MathParser.ParseString(value);
         }
     }
 }
