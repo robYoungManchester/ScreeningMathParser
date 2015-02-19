@@ -21,7 +21,8 @@ namespace ScreeningMathParser
             }
             // finally evaluate the whole expression
             var returnVal = new float();
-            while (!float.TryParse(math2Parse, out returnVal))
+            Regex testForMatchingCharacters = new Regex(@"[abcdef]");
+            while (!float.TryParse(math2Parse, out returnVal) && testForMatchingCharacters.IsMatch(math2Parse))
             {
                 math2Parse = evaluateNumericOperators(math2Parse);
             }
