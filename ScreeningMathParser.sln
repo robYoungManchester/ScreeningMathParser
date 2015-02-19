@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreeningMathParser", "ScreeningMathParser\ScreeningMathParser.csproj", "{3601B8FF-C250-4997-BE04-1D1BCB667BE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathParserTests", "MathParserTests\MathParserTests.csproj", "{48B5ECE2-41CD-4E74-A58A-655A9BB55461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathParserAngularUI", "MathParserAngularUI\MathParserAngularUI.csproj", "{9B8BF380-7F42-4F02-8107-2C03CA88527C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3601B8FF-C250-4997-BE04-1D1BCB667BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3601B8FF-C250-4997-BE04-1D1BCB667BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3601B8FF-C250-4997-BE04-1D1BCB667BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3601B8FF-C250-4997-BE04-1D1BCB667BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48B5ECE2-41CD-4E74-A58A-655A9BB55461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B5ECE2-41CD-4E74-A58A-655A9BB55461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B5ECE2-41CD-4E74-A58A-655A9BB55461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B5ECE2-41CD-4E74-A58A-655A9BB55461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8BF380-7F42-4F02-8107-2C03CA88527C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8BF380-7F42-4F02-8107-2C03CA88527C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8BF380-7F42-4F02-8107-2C03CA88527C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8BF380-7F42-4F02-8107-2C03CA88527C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
